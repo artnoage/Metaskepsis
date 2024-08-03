@@ -342,4 +342,12 @@ with gr.Blocks(theme='gstaff/sketch') as app:
         outputs=[project_dropdown]
     )
 
-app.launch()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Launch the Gradio app")
+    parser.add_argument("--server", action="store_true", help="Run in server mode")
+    args = parser.parse_args()
+
+    if args.server:
+        app.launch(server_name="0.0.0.0", server_port=3000)
+    else:
+        app.launch()
