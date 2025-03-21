@@ -138,6 +138,29 @@ h1 {
     color: var(--text-secondary);
 }
 
+.divider {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.divider h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(45deg, var(--primary-color), #9370db);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.divider p {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
 footer {
     text-align: center;
     margin-top: 3rem;

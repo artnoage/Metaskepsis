@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Add subtle animation to cards
+    // Add subtle animation to cards and divider
     const cards = document.querySelectorAll('.card');
+    const divider = document.querySelector('.divider');
+    
+    // Add fade-in animation to divider
+    if (divider) {
+        divider.style.animation = 'fadeIn 0.8s ease forwards 0.5s';
+        divider.style.opacity = '0';
+    }
     
     cards.forEach((card, index) => {
         // Add staggered animation delay
