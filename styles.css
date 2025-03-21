@@ -54,6 +54,14 @@ h1 {
     font-size: 1.2rem;
     color: var(--text-secondary);
     font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.created-with {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 300;
+    font-style: italic;
 }
 
 .row {
