@@ -1,116 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metaskepsis</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metaskepsis</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Metaskepsis</h1>
-            <p class="subtitle">The Electronic Portfolio of Vaios Laschos</p>
-            <p class="created-with">Created 100% with vibe coding :-)</p>
-            <p style="background: #4CAF50; color: white; padding: 10px; border-radius: 5px; margin-top: 10px;">
-                🌐 <strong>LIVE via Cloudflare Tunnel!</strong> - Testing mode with temporary URL
-            </p>
-        </header>
+  <div class="page">
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero__content">
+        <span class="hero__badge">Metaskepsis</span>
+        <h1>Curated gateways into experiments, tools, and stories.</h1>
+        <p class="hero__lead">
+          A visual atlas of everything I'm building: language tools, research playgrounds, counseling work, and personal archives.
+        </p>
+        <div class="hero__actions">
+          <a href="/interactive_cv/" class="btn btn--primary">
+            <i class="fas fa-user-tie"></i> Interactive CV
+          </a>
+          <a href="/lab/" class="btn btn--ghost">
+            <i class="fas fa-flask"></i> Explore Lab
+          </a>
+        </div>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__number">12</span>
+          <span class="stat__label">Endpoints</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">3</span>
+          <span class="stat__label">Personal Sites</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">∞</span>
+          <span class="stat__label">Ideas</span>
+        </div>
+      </div>
+    </header>
 
-        <main>
-            <!-- Using nginx path-based routing -->
-            <!-- Production domains: metaskepsis.com, papadopoulou.online, vaiosphere.com -->
-            <div class="row">
-                <div class="card" onclick="window.location.href='/memgame/'">
-                    <div class="card-icon">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <h2>MemGame</h2>
-                    <p>Unlock your mind's potential! Discover hidden connections while enjoying an addictive memory challenge</p>
-                </div>
+    <main>
+      <!-- Live Apps Section -->
+      <section class="section">
+        <div class="section__header">
+          <h2>Live Apps</h2>
+          <p>Interactive tools for learning, puzzles, and exploration</p>
+        </div>
+        <div class="grid grid--3">
+          <a href="/memgame/" class="card">
+            <div class="card__icon"><i class="fas fa-gamepad"></i></div>
+            <h3>MemGame</h3>
+            <p>Pattern memory challenge for curious minds.</p>
+          </a>
+          <a href="/tutor/" class="card">
+            <div class="card__icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <h3>Tutor</h3>
+            <p>Language practice with conversational AI.</p>
+          </a>
+          <a href="/tokenizer/" class="card">
+            <div class="card__icon"><i class="fas fa-calculator"></i></div>
+            <h3>Counter</h3>
+            <p>Token budget tool for prompt engineers.</p>
+          </a>
+          <a href="/arc2/" class="card">
+            <div class="card__icon"><i class="fas fa-brain"></i></div>
+            <h3>ARC-2</h3>
+            <p>Abstract reasoning puzzles.</p>
+          </a>
+          <a href="/interactive_cv/" class="card">
+            <div class="card__icon"><i class="fas fa-user-tie"></i></div>
+            <h3>Interactive CV</h3>
+            <p>AI-augmented resume experience.</p>
+          </a>
+          <a href="/collapsi/" class="card">
+            <div class="card__icon"><i class="fas fa-diamond"></i></div>
+            <h3>Collapsi</h3>
+            <p>Strategic card game.</p>
+          </a>
+        </div>
+      </section>
 
-                <div class="card" onclick="window.location.href='/tutor/'">
-                    <div class="card-icon">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <h2>Tutor</h2>
-                    <p>Master any language through natural conversations with an AI companion that adapts to your learning style</p>
-                </div>
+      <!-- Personal Sites Section -->
+      <section class="section">
+        <div class="section__header">
+          <h2>Personal Sites</h2>
+          <p>Stories, portfolios, and enduring references</p>
+        </div>
+        <div class="grid grid--4">
+          <a href="/vaiosphere/" class="card card--compact">
+            <div class="card__icon"><i class="fas fa-infinity"></i></div>
+            <h3>Vaiosphere</h3>
+            <p>Mathematical patterns</p>
+          </a>
+          <a href="/marina/" class="card card--compact">
+            <div class="card__icon"><i class="fas fa-heart"></i></div>
+            <h3>Soul Whispers</h3>
+            <p>Counseling sanctuary</p>
+          </a>
+          <a href="/cv_print/" class="card card--compact">
+            <div class="card__icon"><i class="fas fa-file-pdf"></i></div>
+            <h3>CV Print</h3>
+            <p>Printable resume</p>
+          </a>
+          <a href="/blog/" class="card card--compact">
+            <div class="card__icon"><i class="fas fa-feather-alt"></i></div>
+            <h3>Blog</h3>
+            <p>Notes & build logs</p>
+          </a>
+        </div>
+      </section>
 
-                <div class="card" onclick="window.location.href='/tokenizer/'">
-                    <div class="card-icon">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <h2>Counter</h2>
-                    <p>Optimize your AI prompts! Instantly analyze token usage to craft more efficient and cost-effective messages</p>
-                </div>
-            </div>
+      <!-- Build Space Section -->
+      <section class="section">
+        <div class="section__header">
+          <h2>Build Space</h2>
+          <p>Works in progress and documentation</p>
+        </div>
+        <div class="grid grid--2">
+          <a href="/docs/" class="card">
+            <div class="card__icon"><i class="fas fa-book"></i></div>
+            <h3>Documentation</h3>
+            <p>Guides, references, and how everything connects.</p>
+          </a>
+          <a href="/lab/" class="card">
+            <div class="card__icon"><i class="fas fa-flask"></i></div>
+            <h3>Lab</h3>
+            <p>Experimental playground for rapid iterations.</p>
+          </a>
+        </div>
+      </section>
+    </main>
 
-            <div class="row">
-                <div class="card" onclick="window.location.href='/arc2/'">
-                    <div class="card-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h2>ARC-2 Challenge</h2>
-                    <p>Test the limits of artificial intelligence with this benchmark for general fluid intelligence and abstract reasoning</p>
-                </div>
-
-                <div class="card" onclick="window.location.href='/interactive_cv/'">
-                    <div class="card-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h2>Interactive CV</h2>
-                    <p>Explore my professional journey through an intelligent, searchable resume powered by AI</p>
-                </div>
-
-                <div class="card" onclick="window.location.href='/collapsi/'">
-                    <div class="card-icon">
-                        <i class="fas fa-diamond"></i>
-                    </div>
-                    <h2>Collapsi</h2>
-                    <p>Strategic card game that challenges your tactical thinking and resource management skills</p>
-                </div>
-            </div>
-
-            <div class="divider">
-                <h2>Digital Neighborhood</h2>
-                <p>Other corners of the web where I've left my fingerprints</p>
-            </div>
-
-            <div class="row">
-                <div class="card" onclick="window.location.href='/vaiosphere/'">
-                    <div class="card-icon">
-                        <i class="fas fa-square-root-alt"></i>
-                    </div>
-                    <h2>Vaiosphere</h2>
-                    <p>The digital legacy of a fallen mathematician - exploring the beauty of numbers and patterns</p>
-                </div>
-
-                <div class="card" onclick="window.location.href='/marina/'">
-                    <div class="card-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h2>Soul Whispers</h2>
-                    <p>My wife's counseling sanctuary - where minds find peace and hearts find healing</p>
-                </div>
-
-                <div class="card" onclick="window.location.href='/cv_print/'">
-                    <div class="card-icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </div>
-                    <h2>CV Print Mode</h2>
-                    <p>Print-optimized version of my professional CV</p>
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <p>&copy; 2025 Metaskepsis. All rights reserved.</p>
-        </footer>
-    </div>
-
-    <script src="script.js"></script>
+    <footer>
+      <p>&copy; 2025 Metaskepsis &middot; Built with curiosity</p>
+    </footer>
+  </div>
 </body>
 </html>
